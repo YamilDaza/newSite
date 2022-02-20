@@ -85,17 +85,17 @@ section{
     z-index: 1000;
     display: flex;
     align-items: center;
-    // background-color: rgba(0,0,0,.5);
+    background-color: $white;
 
     &.active{
-        background-color: rgba(0,0,0,.8);
+        // background-color: 
         box-shadow: $box-shadow;
     }
 
     .logo{
         margin-right: auto;
         font-size: 3.5rem;
-        color: $white;
+        color: $black;
         font-weight: bolder;
 
         i{
@@ -107,7 +107,7 @@ section{
         a{
             margin-left: 2rem;
             font-size: 1.8rem;
-            color: $white;
+            color: $black;
 
             &:hover{
                 padding: 1rem;
@@ -130,7 +130,7 @@ section{
         font-size: 3rem;
         margin-left: 2rem;
         cursor: pointer;
-        color: $white;
+        color: $black;
 
         &:hover{
             color: $blue;
@@ -231,7 +231,7 @@ section{
 
         .content{
             width: 50rem;
-            background-color: rgba(0,0,0,.5);
+            // background-color: rgba(0,0,0,.5);
             border-radius: 1rem;
             padding: 2rem;
             margin-top: 10em;
@@ -303,7 +303,43 @@ section{
 }
 
 
+// about
+.about{
+    background: $light-bg;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 
+    .image{
+        flex: 1 1 42rem;
+        padding-right: 5rem;
+        padding-bottom: 2rem;
+
+        img{
+            width: 100%;
+            box-shadow: 2rem 2rem 0 rgba(0,0,0,.1);
+            height: 50rem;
+        }
+    }
+
+    .content{
+        flex: 1 1 42rem;
+
+        h3{
+            color: $blue;
+            text-align: center;
+            font-size: 4rem;
+            padding-bottom: 5rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            color: $black;
+            padding: 1rem 0;
+        }
+    }
+}
 
 
 
@@ -342,6 +378,11 @@ section{
 }
 
 @media(max-width:991px){
+
+    html{
+        font-size: 55%;
+        scroll-padding-top: 7rem;
+    }
 
     .header{
         font-size: 55%;
