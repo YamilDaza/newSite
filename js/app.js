@@ -69,8 +69,32 @@ let swiper = new Swiper(".home-slider", {
   });
 
 
+// Blogs slider
 
-
+let blogSwiper = new Swiper('.blogs-slider',{
+    loop:true,
+    grabCursor:true,
+    spaceBetween:20,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    navigatoin: {
+        nextEl: '.swipper-button-next',
+        prevEl: '.swipper-button-prev',
+    },
+    breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+    },
+});
 
 
 

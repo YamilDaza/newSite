@@ -342,6 +342,94 @@ section{
 }
 
 
+// services ===================================
+.services{
+    background: $blue;
+
+    .heading{
+        color: $white
+    }
+
+    .box-container{
+        @include grid(25rem);
+
+        .box{
+            text-align:center;
+            padding: 2rem;
+            border: $border;
+            border-radius: .5rem;
+            background: $white;
+
+            &:hover{
+                background-color: #2b61a7f3;
+
+                img{
+                    filter: invert(1);
+                }
+
+                h3{
+                    color: $white;
+                }
+
+                p{
+                    color: $white;
+                }
+            }
+        
+            img{
+                height: 8rem;
+                margin-bottom: 1rem;
+            }
+
+            h3{
+                font-size: 3rem;
+                color: $blue;
+            }
+
+            p{
+                font-size: 1.5rem;
+                color: $black;
+                padding: 1rem 0;
+                line-height: 1.7rem;
+            }
+        }
+    }
+}
+
+
+// blogs ==============================
+.blogs{
+    background-color: $light-bg;
+
+    .swiper-slide{
+        text-align: center;
+        // width: 35rem;
+        padding: 2rem;
+        height: 45rem;
+
+        img{
+            height: 25rem;
+            width: 100%;
+            object-fit: cover;
+            border-radius: .5rem;
+        }
+
+        h3{
+            font-size: 2.4rem;
+            color: $blue;
+        }
+
+        p{
+            font-size: 1.4rem;
+            padding: 1rem 0;
+            // line-height: 2;
+            color: $black;
+        }
+    }
+}
+
+
+
 
 
 
