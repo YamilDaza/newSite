@@ -81,7 +81,7 @@ section{
     top: 0;
     left: 0;
     right: 0;
-    padding: 2rem 3%;
+    padding: 1.5rem 3%;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -90,6 +90,7 @@ section{
     &.active{
         // background-color: 
         box-shadow: $box-shadow;
+        border-bottom: 1px solid $blue;
     }
 
     .logo{
@@ -399,13 +400,13 @@ section{
 
 // blogs ==============================
 .blogs{
-    background-color: $light-bg;
+    background-color: $white;
 
     .swiper-slide{
         text-align: center;
         // width: 35rem;
         padding: 2rem;
-        height: 45rem;
+        height: 48rem;
 
         img{
             height: 25rem;
@@ -429,11 +430,125 @@ section{
 }
 
 
+// newsletter ==============================================
+.newsletter{
+    background-color: $light-bg;
+
+    .content{
+        max-width: 70rem;
+        margin: 1rem auto;
+        text-align: center;
+
+        p{
+            font-size: 1.5rem;
+            line-height: 1.5;
+            color: $black;
+        }
+
+        form{
+            margin-top: 2rem;
+            background-color: $white;
+            border-radius: 5rem;
+            border: $border;
+            padding: .7rem;
+            display: flex;
+
+            .email{
+                width: 100%;
+                background: none;
+                text-transform: none;
+                font-size: 1.5rem;
+                color: $black;
+                padding: 0 0.8rem;
+            }
+
+            .btnForm{
+                // margin-top: 1rem;
+                display: inline-block;
+                border: 2px solid $black;
+                color: $white;
+                cursor: pointer;
+                background-color: $black;
+                font-size: 1.5rem;
+                font-weight: 600;
+                padding: 1rem 2rem;
+                border-radius: 5rem;
+                
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                    border: 2px solid $white;
+                
+                }
+            }
+        }
+    }
+}
 
 
 
+// Footer ======================================
+.footer{
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url(../img/slider1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+
+    .box-container{
+        @include grid(25rem);
+
+        .box{
+            padding-left: 2rem;
+            h3{
+                font-size: 3rem;
+                color: #0a7dff;
+                padding: 1.5rem 0;
+                
+            }
+
+            a{
+                display: block;
+                font-size: 1.5rem;
+                color: $white;
+                padding: .5rem 0;
+
+                &:hover{
+                    color: $blue;
+                }
+
+            i{
+                color: $white;
+                padding-right: 1rem;
+
+                &:hover{
+                    color: $blue;
+                }
+            }
+            }
+        }
+    }
 
 
+    .credit{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #aaa;
+        margin-top: 4rem;
+        margin-bottom: -2rem;
+        // padding: 1rem;
+
+        span, a{
+            color: $blue;
+            cursor: pointer;
+
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+
+}
 
 
 
@@ -572,6 +687,10 @@ section{
     
     .header .navbar .bi{
         margin-top: -2rem;
+    }
+
+    .header .icons{
+        display: flex;
     }
 
 }
