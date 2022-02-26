@@ -66,7 +66,38 @@ let swiper = new Swiper(".home-slider", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    
   });
+
+
+
+
+// Slider Services
+let metaSwiper = new Swiper('.box-container',{
+    loop:true,
+    grabCursor:true,
+    spaceBetween:20,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+    },
+    navigatoin: {
+        nextEl: '.swipper-button-next',
+        prevEl: '.swipper-button-prev',
+    },
+    breakpoints: {
+        0:{
+            slidesPerView:1,
+        },
+        768:{
+            slidesPerView:2,
+        },
+        991:{
+            slidesPerView:3,
+        },
+    },
+});
+
 
 
 // Blogs slider
