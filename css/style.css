@@ -8,7 +8,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
@@ -65,7 +64,7 @@ section {
   top: 0;
   left: 0;
   right: 0;
-  padding: 1.5rem 3%;
+  padding: .5rem 3%;
   z-index: 1000;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,13 +83,10 @@ section {
 
 .header .logo {
   margin-right: auto;
-  font-size: 3.5rem;
-  color: #10221b;
-  font-weight: bolder;
 }
 
-.header .logo i {
-  color: #145EBD;
+.header .logo img {
+  width: 7.5rem;
 }
 
 .header .navbar a {
@@ -242,7 +238,7 @@ section {
 }
 
 .home .box .content {
-  width: 50rem;
+  width: 60rem;
   border-radius: 1rem;
   padding: 2rem;
   margin-top: 10em;
@@ -251,14 +247,19 @@ section {
 }
 
 .home .box .content span {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #fff;
 }
 
+.home .box .content span:hover {
+  background-color: #145EBD;
+  color: #fff;
+  padding: .5rem;
+}
+
 .home .box .content h3 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: #145EBD;
-  padding-top: .5rem;
   text-transform: uppercase;
 }
 
@@ -574,6 +575,9 @@ section {
 }
 
 @media (max-width: 788px) {
+  .header .logo img {
+    width: 6.5rem;
+  }
   .header #menu-btn {
     display: inline-block;
   }

@@ -8,7 +8,7 @@
     outline: none;
     border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    // text-transform: capitalize;
     transition: .2s linear;
 }
 
@@ -81,7 +81,7 @@ section{
     top: 0;
     left: 0;
     right: 0;
-    padding: 1.5rem 3%;
+    padding: .5rem 3%;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -95,12 +95,9 @@ section{
 
     .logo{
         margin-right: auto;
-        font-size: 3.5rem;
-        color: $black;
-        font-weight: bolder;
 
-        i{
-            color: $blue;
+        img{
+            width: 7.5rem;
         }
     }
 
@@ -231,7 +228,7 @@ section{
         }
 
         .content{
-            width: 50rem;
+            width: 60rem;
             // background-color: rgba(0,0,0,.5);
             border-radius: 1rem;
             padding: 2rem;
@@ -240,14 +237,21 @@ section{
             margin-left: -3rem;
 
             span{
-                font-size: 4rem;
+                font-size: 3rem;
                 color: $white;
+
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                    padding: .5rem;
+                }
             }
 
             h3{
-                font-size: 6rem;
+                font-size: 5rem;
                 color: $blue;
-                padding-top: .5rem;
+                // background-color: $white;
+                // padding-top: .5rem;
                 text-transform: uppercase;
             }
 
@@ -258,7 +262,6 @@ section{
                 padding: 1rem 0;
             }
         }
-
     }
 }
 
@@ -603,6 +606,12 @@ section{
 @media(max-width:788px){
 
     .header{
+
+        .logo{
+            img{
+                width: 6.5rem;
+            }
+        }
 
         #menu-btn{
             display: inline-block;
