@@ -98,6 +98,10 @@ section {
   list-style: none;
 }
 
+.header .navbar ul li:hover .proyecto-items {
+  display: block;
+}
+
 .header .navbar a {
   margin-left: 2rem;
   font-size: 1.8rem;

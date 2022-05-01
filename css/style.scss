@@ -107,6 +107,13 @@ section{
             text-align: end;
             text-decoration: none;
             list-style: none;
+            li{
+                &:hover{
+                    .proyecto-items{
+                        display: block;
+                    }
+                }
+            }
         }
         a{
             margin-left: 2rem;
@@ -663,7 +670,10 @@ section{
                 li{
                     align-items: center;
                     padding-bottom: 5rem;
+            
                 }
+                
+            
             }
 
             &.active{
