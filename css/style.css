@@ -86,7 +86,16 @@ section {
 }
 
 .header .logo img {
-  width: 7.5rem;
+  width: 9.5rem;
+}
+
+.header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: end;
+  text-decoration: none;
+  list-style: none;
 }
 
 .header .navbar a {
@@ -282,8 +291,8 @@ section {
 .category .box-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(29rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -293,8 +302,8 @@ section {
 }
 
 .category .box-container .box img {
-  height: 25rem;
-  width: 30rem;
+  height: 20rem;
+  width: 25rem;
   border-radius: 20%;
   margin-bottom: 1rem;
 }
@@ -307,9 +316,28 @@ section {
 
 .category .box-container .box p {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   line-height: 1.5;
+}
+
+.category .box-container .box a {
+  font-size: 1.3rem;
+  color: #10221b;
+  border: 2px solid #145EBD;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 3rem;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.category .box-container .box a:hover {
+  background-color: #145EBD;
+  color: #fff;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
 .about {
@@ -409,7 +437,7 @@ section {
 .blogs .swiper-slide {
   text-align: center;
   padding: 2rem;
-  height: 48rem;
+  height: 50rem;
 }
 
 .blogs .swiper-slide img {
@@ -589,19 +617,32 @@ section {
     z-index: 10000;
     width: 40rem;
     height: 100%;
+    /*  display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center; */
+  }
+  .header .navbar ul {
+    margin-top: 5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-flow: column;
-            flex-flow: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .navbar ul li {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 5rem;
   }
   .header .navbar.active {
     left: 0;

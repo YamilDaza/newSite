@@ -97,11 +97,17 @@ section{
         margin-right: auto;
 
         img{
-            width: 7.5rem;
+            width: 9.5rem;
         }
     }
 
     .navbar{
+        ul{
+            display: flex;
+            text-align: end;
+            text-decoration: none;
+            list-style: none;
+        }
         a{
             margin-left: 2rem;
             font-size: 1.8rem;
@@ -262,6 +268,7 @@ section{
                 padding: 1rem 0;
             }
         }
+    
     }
 }
 
@@ -278,15 +285,15 @@ section{
 .category{
     background-color: $white;
     .box-container{
-        @include grid(29rem);
+        @include grid(32rem);
 
         .box{
             text-align:center;
             padding: 1rem;
 
             img{
-                height: 25rem;
-                width: 30rem;
+                height: 20rem;
+                width: 25rem;
                 border-radius: 20%;
                 margin-bottom: 1rem;
             }
@@ -299,9 +306,26 @@ section{
 
             p{
                 font-size: 1.5rem;
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
                 padding: 1rem;
                 line-height: 1.5;
+            }
+            a{
+                font-size: 1.3rem;
+                color: $black;
+                border: 2px solid $blue;
+                padding: 0.5rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                border-radius: 3rem;
+                transition: 0.5s ease;
+                
+
+                &:hover{
+                    background-color: $blue;
+                    color: $white;
+                    transform: scale(1.5);
+                }
             }
         }
     }
@@ -399,7 +423,7 @@ section{
         text-align: center;
         // width: 35rem;
         padding: 2rem;
-        height: 48rem;
+        height: 50rem;
 
         img{
             height: 25rem;
@@ -625,11 +649,22 @@ section{
             z-index: 10000;
             width: 40rem;
             height: 100%;
-            display: flex;
+           /*  display: flex;
             flex-flow: column;
             align-items: center;
-            justify-content: center;
+            justify-content: center; */
             // transform: translateX(-);
+            ul{
+                margin-top: 5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                li{
+                    align-items: center;
+                    padding-bottom: 5rem;
+                }
+            }
 
             &.active{
                 left: 0;
